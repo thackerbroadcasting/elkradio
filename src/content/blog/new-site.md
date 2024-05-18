@@ -5,6 +5,8 @@ date: "05/18/2024"
 draft: false
 ---
 
+**COPIED FROM Z96 MIX. FIND THE ORIGINAL POST [HERE](https://z96mix.com/blog/new-site).**
+
 There have been several changes we have been making in the background. Let's go over some of those changes.
 
 1. **We have a new site!** It's a lot more calm and smooth as compared to the previous one, which wasn't a bad site or layout. We simply have some changes coming up that required us to change frameworks, so we decided we'd create the site while we're at it.
