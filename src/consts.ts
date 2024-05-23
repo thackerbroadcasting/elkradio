@@ -39,3 +39,8 @@ export const SOCIALS: Socials = [
     HREF: "https://github.com/thackerbroadcasting/elkradio"
   }
 ];
+
+export const EXTERNAL_LINK: Metadata = {
+  TITLE: "open in a new window",
+  DESCRIPTION: "https://live.thackerbroadcasting.com/public/98.9_the_elk",
+};
