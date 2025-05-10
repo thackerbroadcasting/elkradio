@@ -2,8 +2,10 @@
 import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import Link from "@components/Link.astro";
-import { SCHEDULE } from "@consts";
+import { EXTERNAL_LINK, SCHEDULE } from "@consts";
 
+const lightThemeSrc = `${EXTERNAL_LINK.DESCRIPTION}/schedule/embed?theme=light`;
+const darkThemeSrc = `${EXTERNAL_LINK.DESCRIPTION}/schedule/embed?theme=dark`;
 ---
 
 <PageLayout title={SCHEDULE.TITLE} description={SCHEDULE.DESCRIPTION}>
@@ -19,11 +21,10 @@ import { SCHEDULE } from "@consts";
       <p class="animate">
         <div>
           <!-- LIGHT MODE -->
-          <iframe class="dark:hidden" src="https://live.thackerbroadcasting.com/public/98.9_the_elk/schedule/embed?theme=light" allowtransparency="true" style="width: 100%; min-height: 850px; border: 0;"></iframe>
+          <iframe class="dark:hidden" src={lightThemeSrc} allowtransparency="true" style="width: 100%; min-height: 1210px; border: 0;"></iframe>
           <!-- DARK MODE -->
-          <iframe class="hidden dark:block" src="https://live.thackerbroadcasting.com/public/98.9_the_elk/schedule/embed?theme=dark" allowtransparency="true" style="width: 100%; min-height: 850px; border: 0; color-scheme: light;"></iframe>
+          <iframe class="hidden dark:block" src={darkThemeSrc} allowtransparency="true" style="width: 100%; min-height: 1210px; border: 0; color-scheme: light;"></iframe>
         </div>
-        <!--<iframe src={EXTERNAL_LINK.DESCRIPTION += '/schedule/embed'} allowtransparency="true" style="width: 100%; min-height: 800px; border: 0;"></iframe>-->
       </p>
     </Container>
 </PageLayout>

@@ -11,6 +11,9 @@ const blog = (await getCollection("blog"))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
 
+const lightThemeSrc = `${EXTERNAL_LINK.DESCRIPTION}/embed?theme=light`;
+const darkThemeSrc = `${EXTERNAL_LINK.DESCRIPTION}/embed?theme=dark`;
+
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
@@ -22,8 +25,7 @@ const blog = (await getCollection("blog"))
       <section>
         <article class="space-y-4">
           <p class="animate">
-            We're glad you're here! While it may not look like much now, we're working on lots of cool features that we hope will be available soon. For now, read our blog or listen to our live stream below.
-          </p>
+            We're glad you're here! Read the blog, listen to our live stream below, request songs, view our schedule, and see what we've played recently. All in one convenient spot.          </p>
         </article>
       </section>
 
@@ -33,9 +35,9 @@ const blog = (await getCollection("blog"))
         </h4>
         <div>
           <!-- LIGHT MODE -->
-          <iframe class="dark:hidden" src="https://live.thackerbroadcasting.com/public/98.9_the_elk/embed?theme=light" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+          <iframe class="dark:hidden" src={lightThemeSrc} allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
           <!-- DARK MODE -->
-          <iframe class="hidden dark:block" src="https://live.thackerbroadcasting.com/public/98.9_the_elk/embed?theme=dark" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0; color-scheme: light;"></iframe>
+          <iframe class="hidden dark:block" src={darkThemeSrc} allowtransparency="true" style="width: 100%; min-height: 150px; border: 0; color-scheme: light;"></iframe>
         </div>
         <Link href={EXTERNAL_LINK.DESCRIPTION} external aria-label={`${SITE.NAME} on ${EXTERNAL_LINK.TITLE}`}>
           {EXTERNAL_LINK.TITLE}
