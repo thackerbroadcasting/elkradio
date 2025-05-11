@@ -2,10 +2,10 @@
 import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import Link from "@components/Link.astro";
-import { EXTERNAL_LINK, SCHEDULE } from "@consts";
+import { SITE, SCHEDULE } from "@consts";
 
-const lightThemeSrc = `${EXTERNAL_LINK.DESCRIPTION}/embed-requests?theme=light`;
-const darkThemeSrc = `${EXTERNAL_LINK.DESCRIPTION}/embed-requests?theme=dark`;
+const lightThemeSrc = `${SITE.EXTERNAL_LINK}/embed-requests?theme=light`;
+const darkThemeSrc = `${SITE.EXTERNAL_LINK}/embed-requests?theme=dark`;
 
 ---
 
@@ -16,7 +16,7 @@ const darkThemeSrc = `${EXTERNAL_LINK.DESCRIPTION}/embed-requests?theme=dark`;
       </h4>
       <br>
       <p class="animate">
-        This is YOUR station! Make requests to your hearts content*, and keep your favorites coming with more control than ever before. Even when we're not in the studio! If the request box below isn't displaying right, click <Link href={EXTERNAL_LINK.DESCRIPTION}>here</Link>.
+        This is YOUR station! Make requests to your hearts content*, and keep your favorites coming with more control than ever before. Even when we're not in the studio! If the request box below isn't displaying right, click <Link href={SITE.EXTERNAL_LINK}>here</Link>.
       </p>
       <br>
       <p class="animate">

@@ -4,6 +4,7 @@ export const SITE: Site = {
   NAME: "Elk Radio",
   EMAIL: "contact@thackerbroadcasting.com",
   CALL_SIGN: "KLKE",
+  EXTERNAL_LINK: "https://live.thackerbroadcasting.com/public/98.9_the_elk",
   NUM_POSTS_ON_HOMEPAGE: 3,
   NUM_WORKS_ON_HOMEPAGE: 0,
   NUM_PROJECTS_ON_HOMEPAGE: 0,
@@ -45,8 +46,3 @@ export const SOCIALS: Socials = [
     HREF: "https://github.com/thackerbroadcasting/elkradio"
   }
 ];
-
-export const EXTERNAL_LINK: Metadata = {
-  TITLE: "open in a new window",
-  DESCRIPTION: "https://live.thackerbroadcasting.com/public/98.9_the_elk",
-};
