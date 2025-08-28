@@ -19,13 +19,14 @@ const darkThemeSrc = `${SITE.EXTERNAL_LINK}/embed?theme=dark`;
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <h4 class="animate font-semibold text-black dark:text-white">
-      We're Elk Radio on 98.9 FM, Jefferson County's Best Mix <span class="text-xl">👋🏻</span> 
+      We're "{SITE.NAME}" <span class="text-xl">👋🏻</span> 
     </h4>
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
           <p class="animate">
-            We're glad you're here! Read the blog, listen to our live stream below, request songs, view our schedule, and see what we've played recently. All in one convenient spot.          </p>
+            We're glad you're here! We're an internet-only station. You can read more about that on our <Link href="/about">about</Link> page. Meanwhile, read the blog, listen to our live stream below, request songs, and see what we've played recently. All in one convenient spot.
+          </p>
         </article>
       </section>
 
@@ -113,13 +114,8 @@ const darkThemeSrc = `${SITE.EXTERNAL_LINK}/embed?theme=dark`;
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
+          Connect with us
         </h5>
-        <article>
-          <p>
-            
-          </p>
-        </article>
         <ul class="flex flex-wrap gap-2">
           {SOCIALS.map(SOCIAL => (
             <li class="flex gap-x-2 text-nowrap">
