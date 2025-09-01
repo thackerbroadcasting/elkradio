@@ -4,7 +4,7 @@ export const SITE: Site = {
   NAME: "Elk Radio",
   EMAIL: "contact@thackerbroadcasting.com",
   CALL_SIGN: "KLKE",
-  EXTERNAL_LINK: "https://live.thackerbroadcasting.com/public/98.9_the_elk",
+  EXTERNAL_LINK: "https://live.thackerbroadcasting.com/public/the_elk",
   NUM_POSTS_ON_HOMEPAGE: 3,
   NUM_WORKS_ON_HOMEPAGE: 0,
   NUM_PROJECTS_ON_HOMEPAGE: 0,
